@@ -2,6 +2,7 @@ package router
 
 import (
 	"api_server/handler/sd"
+	"api_server/handler/user"
 	"api_server/router/middleware"
 	"net/http"
 
@@ -27,6 +28,11 @@ func Load(g *gin.Engine, mw ...gin.HandlerFunc) *gin.Engine {
 		svcd.GET("/disk", sd.DiskCheck)
 		svcd.GET("/cpu", sd.CPUCheck)
 		svcd.GET("/ram", sd.RAMCheck)
+	}
+
+	u := g.Group("/v1/user")
+	{
+		u.POST("", user.Create)
 	}
 
 	return g
