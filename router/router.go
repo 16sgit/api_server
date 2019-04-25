@@ -2,7 +2,7 @@ package router
 
 import (
 	"api_server/handler/sd"
-	"api_server/handler/user"
+	"api_server/handler/v1/user"
 	"api_server/router/middleware"
 	"net/http"
 
@@ -22,6 +22,7 @@ func Load(g *gin.Engine, mw ...gin.HandlerFunc) *gin.Engine {
 		c.String(http.StatusOK, "The incorrect API route.")
 	})
 
+	//健康检查
 	svcd := g.Group("/sd")
 	{
 		svcd.GET("/health", sd.HealthCheck)
@@ -30,10 +31,11 @@ func Load(g *gin.Engine, mw ...gin.HandlerFunc) *gin.Engine {
 		svcd.GET("/ram", sd.RAMCheck)
 	}
 
-	u := g.Group("/v1/user")
-	{
-		u.POST("", user.Create)
-	}
+	//用户登录授权
+	g.POST("/login", user.Login)
+
+	//api接口
+	apiRouter(g)
 
 	return g
 }
