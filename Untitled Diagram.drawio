@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-06-10T12:12:22.329Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="-E85obbcKOg2Nd9e1RcX" version="14.7.7" type="github">
+<mxfile host="app.diagrams.net" modified="2021-06-10T12:35:32.979Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="Rev3Ad2PI62aNA2imjLz" version="14.7.7" type="github">
   <diagram id="iLAhI7fDIiK7yNdQFw2C" name="Page-1">
     <mxGraphModel dx="1718" dy="888" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -54,8 +54,8 @@
             <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="c0klzH_2Gw2kYuzC9l45-36" value="Nginx" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="260" y="160" width="40" height="20" as="geometry" />
+        <mxCell id="c0klzH_2Gw2kYuzC9l45-36" value="Nginx 集群" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="260" y="160" width="80" height="20" as="geometry" />
         </mxCell>
         <mxCell id="c0klzH_2Gw2kYuzC9l45-37" value="WebHook Url Project" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="170" y="270" width="130" height="20" as="geometry" />
@@ -119,6 +119,12 @@
         </mxCell>
         <mxCell id="c0klzH_2Gw2kYuzC9l45-60" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="542.5" y="470" width="175" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c0klzH_2Gw2kYuzC9l45-62" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="40" y="440" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="c0klzH_2Gw2kYuzC9l45-63" value="monitor" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="450" width="40" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
